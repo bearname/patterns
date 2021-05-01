@@ -1,0 +1,25 @@
+
+How to read a text-file resource into Java unit test? - Stack ...https://stackoverflow.com › questions › how-to-read-a-t...
+Nov 17, 2014 — I have a unit test that needs to work with XML file located in src/test/resources/abc.xml . What is the easiest way just to get the content of the file ...
+8 answers
+ 
+·
+ 
+Top answer: 
+Finally I found a neat solution, thanks to Apache Commons: package com.example; ...
+Comparing text files with Junit - Stack Overflow
+9 answers
+Jan 21, 2009
+How can I compare files in a JUnit test case? - Stack ...
+5 answers
+Sep 23, 2012
+Easy way to get a test file into JUnit - Stack Overflow
+5 answers
+Dec 19, 2012
+Reading a resource file in JUnit test - Stack Overflow
+1 answer
+May 22, 2017
+More results from stackoverflow.com
+
+How To Read A File from JUnit Test : Adam Bien's Webloghttps://adambien.blog › roller › abien › entry › how_to...
+Apr 14, 2020 — workingDir.resolve("test.file"); String content = Files.readString(file); assertThat(content, is("duke")); } }. The method Files.readString ships with .ips with .

@@ -1,0 +1,1 @@
+java -jar build/libs/painter.jar %1 < shape.txt

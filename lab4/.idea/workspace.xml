@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fbbe5872-836c-405f-982e-aadcdd8679a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/7.0/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/7.0/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/7.0/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/7.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/7.0/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/configuration-cache/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/lab3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/Beverage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/BeverageBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/BlackTea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/Cappuccino.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/Coffee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/CoffeePortionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/GreenTea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/Latte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/Milkshake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/MilkshakePortionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/Tea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/WhiteTea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/YellowTea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/CIceCubes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/Chocolate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/ChocolateCrumbs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/Cinnamon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/CoconutFlakes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/CondimentDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/Cream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/IceCubeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/Lemon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/Liquor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/LiquorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/Syrup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/SyrupType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/output-multiple.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/StreamDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/exception/StreamException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/input/DecompressionDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/input/DecryptionDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/input/InputStreamDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/input/MemoryInputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/input/MyFileInputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/input/MyInputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/output/CompressionDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/output/EncryptionDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/output/MemoryOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/output/MyFileOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/output/MyOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/output/OutputStreamDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/stream/test.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/shape.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/canvas/ConsoleCanvas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/canvas/JavaCanvas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/canvas/MyCanvas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/designer/ConsoleDesigner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/designer/Designer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/pacture/PictureDraft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/pacture/PictureDraftImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/pacture/ShapeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/pacture/ShapeFactoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/painter/Painter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/painter/PainterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/Dot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/Ellipse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/RegularPolygon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/Triangle.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/painter">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/task1">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/painter">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="painter" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="painter" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="painter" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="JUnit4 Test Class" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1rqJXgCNaM0lpgpvCn6HMXKUNxg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/painter/src/main/java" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.mikushov.ood.canvas" />
+      <recent name="ru.mikushov.ood.painter" />
+      <recent name="ru.mikushov.ood.designer" />
+      <recent name="ru.mikushov.ood" />
+      <recent name="ru.mikushov.ood.shape" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\ood\labs\lab4\painter\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.mikushov.ood.Main" />
+      <module name="painter_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.mikushov.ood.pacture.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="E:/github/ood/labs/lab4/painter [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/painter" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="E:/github/ood/labs/lab4/painter [wrapper]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/painter" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="wrapper" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="task1WeatherStation" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="task1WeatherStation" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.E:/github/ood/labs/lab4/painter [build]" />
+        <item itemvalue="Gradle.E:/github/ood/labs/lab4/painter [wrapper]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fbbe5872-836c-405f-982e-aadcdd8679a7" name="Default Changelist" comment="" />
+      <created>1619724415992</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619724415992</updated>
+      <workItem from="1619724417339" duration="95000" />
+      <workItem from="1619724533323" duration="46000" />
+      <workItem from="1619832107784" duration="1777000" />
+      <workItem from="1619833947629" duration="43000" />
+      <workItem from="1619834008570" duration="6000" />
+      <workItem from="1619834037461" duration="128000" />
+      <workItem from="1619834239529" duration="1776000" />
+      <workItem from="1619836047280" duration="1779000" />
+      <workItem from="1619837856134" duration="1678000" />
+      <workItem from="1619839705215" duration="1777000" />
+      <workItem from="1619841510094" duration="1778000" />
+      <workItem from="1619843329391" duration="1776000" />
+      <workItem from="1619845184863" duration="1774000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619724479230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619724479230" />
+    <state x="285" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1619842488267">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="285" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1619842488267" />
+    <state x="409" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619839050605">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="409" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619839050605" />
+    <state x="707" y="354" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1619846698638">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="707" y="354" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1619846698638" />
+    <state x="740" y="229" key="FileChooserDialogImpl" timestamp="1619834265208">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="229" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619834265208" />
+    <state width="1921" height="284" key="GridCell.Tab.0.bottom" timestamp="1619846833183">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1619846833183" />
+    <state width="1921" height="284" key="GridCell.Tab.0.center" timestamp="1619846833183">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1619846833183" />
+    <state width="1921" height="284" key="GridCell.Tab.0.left" timestamp="1619846833183">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1619846833183" />
+    <state width="1921" height="284" key="GridCell.Tab.0.right" timestamp="1619846833183">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1619846833183" />
+    <state width="1921" height="356" key="GridCell.Tab.1.bottom" timestamp="1619844632759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1619844632759" />
+    <state width="1921" height="356" key="GridCell.Tab.1.center" timestamp="1619844632759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1619844632759" />
+    <state width="1921" height="356" key="GridCell.Tab.1.left" timestamp="1619844632759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1619844632759" />
+    <state width="1921" height="356" key="GridCell.Tab.1.right" timestamp="1619844632759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1619844632759" />
+    <state x="625" y="224" key="NewModule_or_Project.wizard" timestamp="1619834266771">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="625" y="224" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1619834266771" />
+    <state x="775" y="454" key="ReplaceDuplicatesPrompt" timestamp="1619844085576">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="775" y="454" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1619844085576" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1619834380812">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1619834380812" />
+    <state x="690" y="281" key="extract.method.dialog" timestamp="1619844080126">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="281" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619844080126" />
+    <state x="343" y="130" key="new project wizard" timestamp="1619834285424">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="343" y="130" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1619834285424" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1619844972091">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1619844972091" />
+    <state x="143" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1619836246578">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1619836246578" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/task2/src/main/java/ru/mikushov/ood/lab2/task5/observable/ObservableBase.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
