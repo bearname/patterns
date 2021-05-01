@@ -5,10 +5,6 @@
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
-      <module name="task3WeatherStation" target="11" />
-      <module name="task46" target="11" />
-      <module name="task46.main" target="11" />
-      <module name="task46.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

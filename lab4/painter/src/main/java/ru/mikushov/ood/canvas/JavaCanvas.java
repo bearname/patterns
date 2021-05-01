@@ -21,7 +21,6 @@ public class JavaCanvas implements MyCanvas {
     public JavaCanvas(int width, int height) {
         bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         graphics2D = bufferedImage.createGraphics();
-        graphics2D.setBackground(java.awt.Color.WHITE);
     }
 
     @Override

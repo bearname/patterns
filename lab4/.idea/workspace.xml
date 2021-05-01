@@ -14,99 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbbe5872-836c-405f-982e-aadcdd8679a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/7.0/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/7.0/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/7.0/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/7.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/7.0/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/configuration-cache/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.idea/lab3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/Beverage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/BeverageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/BlackTea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/Cappuccino.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/Coffee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/CoffeePortionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/GreenTea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/Latte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/Milkshake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/MilkshakePortionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/Tea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/WhiteTea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/beverage/YellowTea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/CIceCubes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/Chocolate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/ChocolateCrumbs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/Cinnamon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/CoconutFlakes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/CondimentDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/Cream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/IceCubeType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/Lemon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/Liquor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/LiquorType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/Syrup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/coffee/src/main/java/ru/mikushov/ood/coffee/condiment/SyrupType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/output-multiple.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/StreamDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/exception/StreamException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/input/DecompressionDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/input/DecryptionDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/input/InputStreamDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/input/MemoryInputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/input/MyFileInputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/input/MyInputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/output/CompressionDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/output/EncryptionDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/output/MemoryOutputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/output/MyFileOutputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/output/MyOutputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/src/main/java/ru/mikushov/ood/stream/output/OutputStreamDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/stream/test.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/shape.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/canvas/ConsoleCanvas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/canvas/JavaCanvas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/canvas/MyCanvas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/designer/ConsoleDesigner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/designer/Designer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/pacture/PictureDraft.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/pacture/PictureDraftImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/pacture/ShapeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/pacture/ShapeFactoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/painter/Painter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/painter/PainterImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/Dot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/Ellipse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/RegularPolygon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/shape/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/canvas/JavaCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/painter/src/main/java/ru/mikushov/ood/canvas/JavaCanvas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,9 +27,6 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/painter">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/task1">
       <ProjectState />
     </projectState>
   </component>
@@ -209,19 +118,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -340,6 +236,7 @@
       <workItem from="1619841510094" duration="1778000" />
       <workItem from="1619843329391" duration="1776000" />
       <workItem from="1619845184863" duration="1774000" />
+      <workItem from="1619865456820" duration="17000" />
     </task>
     <servers />
   </component>
