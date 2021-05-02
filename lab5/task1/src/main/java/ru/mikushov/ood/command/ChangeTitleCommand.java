@@ -3,7 +3,7 @@ package ru.mikushov.ood.command;
 import ru.mikushov.ood.model.Title;
 
 public class ChangeTitleCommand extends BaseCommand {
-    private Title title;
+    private final Title title;
     private final String target;
     private final String newValue;
 

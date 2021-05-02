@@ -17,7 +17,7 @@ public class DocumentImplTest {
     }
 
     @Test
-    public void canSetTitle() {
+    public void canSetTitle() throws Exception {
         final String updatedTitle = "Awesome document";
         document.setTitle(updatedTitle);
         assertEquals("Awesome document", document.getTitle());
@@ -27,7 +27,7 @@ public class DocumentImplTest {
     }
 
     @Test
-    public void canUndoSetTitle() {
+    public void canUndoSetTitle() throws Exception {
         document.setTitle(UPDATED_TITLE);
         assertEquals("Awesome document", document.getTitle());
 
@@ -36,7 +36,7 @@ public class DocumentImplTest {
     }
 
     @Test
-    public void canRedoSetTitle() {
+    public void canRedoSetTitle() throws Exception {
         document.setTitle(UPDATED_TITLE);
         assertEquals(UPDATED_TITLE, document.getTitle());
 

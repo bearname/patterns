@@ -3,18 +3,16 @@ package ru.mikushov.ood.model;
 public interface Document {
     Paragraph insertParagraph(final String text, final int position) throws Exception;
 
-    // Вставляет изображение в указанную позицию (сдвигая последующие элементы)
-    // Параметр path задает путь к вставляемому изображению
-    // При вставке изображение должно копироваться в подкаталог images
-    // под автоматически сгенерированным именем
+    // Inserts an image at the specified position (shifting subsequent elements)
+    // The path parameter sets the path to the inserted image
+    // When pasting, the image must be copied to the images subdirectory
+    // under an automatically generated name
     Image insertImage(final String path, final int width, final int height, final int position) throws Exception;
 
     int getItemsCount();
 
-    // Доступ к элементам изображения
     DocumentItem getItem(int index);
 
-    // Удаляет элемент из документа
      void deleteItem(int index) throws Exception;
 
     String getTitle();
@@ -24,9 +22,9 @@ public interface Document {
     void undo();
 
     boolean canRedo();
-    void redo();
+    void redo() throws Exception;
 
-    // Сохраняет документ в формате html. Изображения сохраняются в подкаталог images.
-    // Пути к изображениям указываются относительно пути к сохраняемому HTML файлу
+    // Saves the document in html format. Images are saved in the images subdirectory.
+    // Image paths are specified relative to the path to the saved HTML file
     void save(final String path);
 }

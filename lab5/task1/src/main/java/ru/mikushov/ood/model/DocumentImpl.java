@@ -89,7 +89,7 @@ public class DocumentImpl implements Document {
     }
 
     @Override
-    public void redo() {
+    public void redo() throws Exception {
         history.redo();
     }
 
