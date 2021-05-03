@@ -1,13 +1,14 @@
-package ru.mikushov.ood;
+package ru.mikushov.ood.service;
 
+import ru.mikushov.ood.command.BaseCommand;
 import ru.mikushov.ood.command.Command;
+import ru.mikushov.ood.command.InsertImageCommand;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class History implements Executor {
-
-    private final List<Command> commands = new ArrayList<>();
+    private List<BaseCommand> commands = new ArrayList<>();
     private int nextCommandIndex = 0;
 
     @Override
@@ -44,14 +45,36 @@ public class History implements Executor {
         }
     }
 
-    private Command getCommand() {
-        return this.commands.get(nextCommandIndex);
-    }
-
     @Override
-    public void addAndExecuteCommand(Command command) throws Exception {
+    public void addAndExecuteCommand(BaseCommand command) throws Exception {
+        boolean b = needDeleteCommands();
+        if (b) {
+            deleteCommands();
+        }
+
         commands.add(command);
         nextCommandIndex++;
         command.execute();
+    }
+
+    private BaseCommand getCommand() {
+        return this.commands.get(nextCommandIndex);
+    }
+
+    private void deleteCommands() {
+        for (int i = nextCommandIndex; i < commands.size(); i++) {
+            final BaseCommand commandToDelete = commands.get(i);
+            if ((commandToDelete instanceof InsertImageCommand)
+                    && !commandToDelete.isExecuted()
+            ) {
+                commandToDelete.destroy();
+            }
+        }
+
+        this.commands = this.commands.subList(0, nextCommandIndex);
+    }
+
+    private boolean needDeleteCommands() {
+        return nextCommandIndex < commands.size() && nextCommandIndex >= 0;
     }
 }

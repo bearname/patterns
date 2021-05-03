@@ -1,0 +1,12 @@
+insertImage end 400 300 D:\Users\mikha\Desktop\github2\ood\labs\lab5\task1\github.png
+resizeImage 0 500 400
+list
+insertParagraph end hello world
+replaceText 0 hello worldhello world
+save D:\Users\mikha\Desktop\github2\ood\labs\lab5\task1\index.html
+
+insertImage end 400 300 D:\Users\mikha\Desktop\github2\ood\labs\lab5\task1\github.png
+undo
+list
+insertParagraph end hello world
+list

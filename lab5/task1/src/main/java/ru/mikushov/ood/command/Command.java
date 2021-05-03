@@ -4,4 +4,6 @@ public interface Command {
     void execute() throws Exception;
 
     void unExecute();
+
+    void destroy();
 }

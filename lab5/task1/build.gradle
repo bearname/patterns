@@ -1,8 +1,9 @@
 plugins {
     id 'java'
+    id 'jacoco'
 }
 
-group 'ru.mikushov.ood.lab2.task1'
+group 'ru.mikushov.ood.lab5.editor'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -10,26 +11,56 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.projectlombok:lombok:1.18.20'
-    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    implementation 'org.junit.jupiter:junit-jupiter:5.4.2'
 
-    testImplementation 'org.projectlombok:lombok:1.18.20'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
-    testImplementation group: 'junit', name: 'junit', version: '4.12'
-}
+    implementation 'org.jsoup:jsoup:1.13.1'
 
-test {
-    useJUnitPlatform()
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.0.0'
 }
 
 jar {
     archiveBaseName = 'editor'
-    archiveVersion = ''
+    archiveVersion = '1.0'
     manifest {
         attributes "Main-Class": "ru.mikushov.ood.Main"
     }
 
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+
+jacoco {
+    toolVersion = "0.8.6"
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        csv.enabled false
+        html.destination layout.buildDirectory.dir('jacocoHtml').get().asFile
+    }
+}
+
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+    dependsOn test
+}
+
+check.dependsOn jacocoTestCoverageVerification
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                value = 'COVEREDRATIO'
+                minimum = 0.1
+            }
+        }
     }
 }

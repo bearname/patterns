@@ -19,6 +19,10 @@ public abstract class BaseCommand implements Command {
         }
     }
 
+    public boolean isExecuted() {
+        return this.isExecuted;
+    }
+
     abstract void doExecute() throws Exception;
 
     abstract void doUnExecute();

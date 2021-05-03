@@ -1,3 +1,5 @@
 lab*/*/.gradle
 lab*/*/build
 lab*/*/out
+*.gradle
+*.idea

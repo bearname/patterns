@@ -1,25 +1,30 @@
 package ru.mikushov.ood.command;
 
-import ru.mikushov.ood.model.Title;
+import ru.mikushov.ood.model.Text;
 
 public class ChangeTitleCommand extends BaseCommand {
-    private final Title title;
+    private final Text text;
     private final String target;
     private final String newValue;
 
-    public ChangeTitleCommand(Title title, String target, String newValue) {
-        this.title = title;
+    public ChangeTitleCommand(Text text, String target, String newValue) {
+        this.text = text;
         this.target = target;
         this.newValue = newValue;
     }
 
     @Override
     void doExecute() {
-        this.title.setValue(newValue);
+        this.text.setValue(newValue);
     }
 
     @Override
     void doUnExecute() {
-        this.title.setValue(target);
+        this.text.setValue(target);
+    }
+
+    @Override
+    public void destroy() {
+
     }
 }
