@@ -100,6 +100,30 @@ public class DocumentImplTest {
     }
 
     @Test
+    public void cannotInsertParagraphWithPositionLessThanMinValue() {
+        try {
+            final String initialParagraphText = "Hello world!";
+            document.insertParagraph(initialParagraphText, -20);
+
+            fail();
+        } catch (Exception exception) {
+            assertEquals("Invalid position. Position must be in range [-1, 0]", exception.getMessage());
+        }
+    }
+
+    @Test
+    public void cannotInsertParagraphWithPositionMoreThanMinValue() {
+        try {
+            final String initialParagraphText = "Hello world!";
+            document.insertParagraph(initialParagraphText, 200);
+
+            fail();
+        } catch (Exception exception) {
+            assertEquals("Invalid position. Position must be in range [-1, 0]", exception.getMessage());
+        }
+    }
+
+    @Test
     public void canInsertParagraph() {
         try {
             final String initialParagraphText = "Hello world!";
@@ -238,16 +262,56 @@ public class DocumentImplTest {
     }
 
     @Test
-    public void canInsertImageItem() {
+    public void cannotReplaceImageWithReplaceParagraphCommand() {
         try {
-            document.insertImage("github.png", 0, 400, 300);
+            Image insertedImage = document.insertImage("github.png", 0, 400, 300);
+            document.replaceParagraphText(0, "Replaced value");
+            fail();
+        } catch (Exception exception) {
+            assertEquals("Cannot perform ReplaceParagraphCommand on image item", exception.getMessage());
+        }
+    }
+
+    @Test
+    public void canReplaceParagraphCommand() {
+        try {
+            final String firstParagraph = "Inserted first";
+            document.insertParagraph(firstParagraph, 0);
+            document.replaceParagraphText(0, "Replaced value");
+
+            List<String> paragraphs = Collections.singletonList("Replaced value");
+
             assertEquals(1, document.getItemsCount());
-            DocumentItem item = document.getItem(0);
-            assertNull(item.getParagraph());
-            assertNotNull(item.getImage());
-            Image image = item.getImage();
-            assertEquals(400, image.getWidth());
-            assertEquals(300, image.getHeight());
+            for (int i = 0; i < document.getItemsCount(); i++) {
+                DocumentItem item = document.getItem(i);
+
+                assertNull(item.getImage());
+                assertNotNull(item.getParagraph());
+                assertEquals(paragraphs.get(i), item.getParagraph().getText());
+            }
+        } catch (Exception exception) {
+            exception.printStackTrace();
+            fail();
+        }
+    }
+
+    @Test
+    public void canUndoReplaceParagraphCommand() {
+        try {
+            Paragraph initialParagraph = document.insertParagraph("Inserted first", 0);
+            document.replaceParagraphText(0, "Replaced value");
+            document.undo();
+
+            List<String> paragraphs = Collections.singletonList(initialParagraph.getText());
+
+            assertEquals(1, document.getItemsCount());
+            for (int i = 0; i < document.getItemsCount(); i++) {
+                DocumentItem item = document.getItem(i);
+
+                assertNull(item.getImage());
+                assertNotNull(item.getParagraph());
+                assertEquals(paragraphs.get(i), item.getParagraph().getText());
+            }
         } catch (Exception exception) {
             exception.printStackTrace();
             fail();
@@ -271,7 +335,103 @@ public class DocumentImplTest {
         }
     }
 
-    private List<DocumentItem> getDocumentItems(String path) throws Exception {
+    @Test
+    public void cannotResizeParagraph() {
+        try {
+            Paragraph paragraph = document.insertParagraph("hello world", -1);
+            document.resizeImage(0, 800, 600);
+
+            fail();
+        } catch (Exception exception) {
+            assertEquals("Item by index 0 not image", exception.getMessage());
+        }
+    }
+
+    @Test
+    public void canResizeImage() {
+        try {
+            Image image = document.insertImage("github.png", -1, 400, 300);
+            document.resizeImage(0, 800, 600);
+            image.resize(800, 600);
+
+            List<DocumentItem> checkDocumentsItem = new ArrayList<>();
+            checkDocumentsItem.add(new DocumentItem(image));
+            checkDocumentsItem(document, checkDocumentsItem);
+        } catch (Exception e) {
+            e.printStackTrace();
+            fail();
+        }
+    }
+
+    @Test
+    public void canUndoResizeImage() {
+        try {
+            Image image = document.insertImage("github.png", -1, 400, 300);
+            document.resizeImage(0, 800, 600);
+            document.undo();
+
+            List<DocumentItem> checkDocumentsItem = new ArrayList<>();
+            checkDocumentsItem.add(new DocumentItem(image));
+            checkDocumentsItem(document, checkDocumentsItem);
+        } catch (Exception e) {
+            e.printStackTrace();
+            fail();
+        }
+    }
+
+    @Test
+    public void cannotDeleteItemWithPositionLessThanMinValue() {
+        try {
+            Paragraph paragraph = document.insertParagraph("github.png", -1);
+            Paragraph paragraphTwo = document.insertParagraph("github.png", -1);
+            document.deleteItem(-200);
+            fail();
+        } catch (Exception exception) {
+            assertEquals("Invalid index. Index must be in range [0, 1]", exception.getMessage());
+        }
+    }
+
+  @Test
+    public void cannotDeleteItemWithPositionMoreThanMaxValue() {
+        try {
+            Paragraph paragraph = document.insertParagraph("github.png", -1);
+            Paragraph paragraphTwo = document.insertParagraph("github.png", -1);
+            document.deleteItem(200);
+            fail();
+        } catch (Exception exception) {
+            assertEquals("Invalid index. Index must be in range [0, 1]", exception.getMessage());
+        }
+    }
+
+    @Test
+    public void canDeleteImage() {
+        try {
+            Image image = document.insertImage("github.png", -1, 400, 300);
+            document.deleteItem(0);
+
+            List<DocumentItem> checkDocumentsItem = new ArrayList<>();
+            checkDocumentsItem(document, checkDocumentsItem);
+        } catch (Exception e) {
+            e.printStackTrace();
+            fail();
+        }
+    }
+
+    @Test
+    public void canDeleteParagraph() {
+        try {
+            document.insertParagraph("github.png", -1);
+            document.deleteItem(0);
+
+            List<DocumentItem> checkDocumentsItem = new ArrayList<>();
+            checkDocumentsItem(document, checkDocumentsItem);
+        } catch (Exception e) {
+            e.printStackTrace();
+            fail();
+        }
+    }
+
+    public List<DocumentItem> getDocumentItems(String path) throws Exception {
         String html = htmlFileToString(path);
 
         Document htmlDocument = Jsoup.parse(html);

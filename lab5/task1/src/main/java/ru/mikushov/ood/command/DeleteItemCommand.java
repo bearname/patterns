@@ -44,12 +44,11 @@ public class DeleteItemCommand extends BaseCommand {
     void doUnExecute() {
         if (documentItem.isParagraph()) {
             markedToDeleteParagraph.remove(index, documentItem.getParagraph());
-            documentItems.add(index, documentItem);
-        } else if (documentItem.isImage()) {
+        } else {
             final Image image = documentItem.getImage();
             imageManager.markAsToDelete(image, false);
-            documentItems.add(index, documentItem);
         }
+        documentItems.add(index, documentItem);
     }
 
     @Override

@@ -23,9 +23,9 @@ public interface Document {
 
     void setTitle(String title) throws Exception;
 
-    void replaceParagraphText(int position, String text);
+    void replaceParagraphText(int position, String text) throws Exception;
 
-    void resizeImage(int position, int width, int height);
+    void resizeImage(int position, int width, int height) throws Exception;
 
     boolean canUndo();
 

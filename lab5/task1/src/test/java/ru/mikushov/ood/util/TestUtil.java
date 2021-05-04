@@ -9,7 +9,6 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-
 public class TestUtil {
     public static void checkDocumentsItem(DocumentImpl document, List<DocumentItem> expectedItems) {
         for (int i = 0; i < document.getItemsCount() - 1; i++) {

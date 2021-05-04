@@ -32,27 +32,27 @@ public class Menu {
 
     public void showInstructions() {
         for (var entry : menuItems.entrySet()) {
-            System.out.println(entry);
+            System.out.println(entry.getValue());
         }
+    }
+
+    public boolean hasCommand(String shortcut) {
+        return menuItems.containsKey(shortcut);
     }
 
     public void exit() {
         exit = true;
     }
 
-    private boolean executeCommand(String commandLine) {
+    public boolean executeCommand(String commandLine) {
         try {
             String commandShortcut = getShortcut(commandLine);
 
             if (menuItems.containsKey(commandShortcut)) {
-                try {
-                    Consumer<String> command = menuItems.get(commandShortcut).getCommand();
-                    command.accept(commandLine);
-                    return true;
-
-                } catch (Exception e) {
-                    System.out.println(e.getMessage());
-                }
+                MenuItem menuItem = menuItems.get(commandShortcut);
+                Consumer<String> command = menuItem.getCommand();
+                command.accept(commandLine);
+                return true;
             }
         } catch (Exception exception) {
             exception.printStackTrace();

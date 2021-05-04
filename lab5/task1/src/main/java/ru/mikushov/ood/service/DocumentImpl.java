@@ -30,7 +30,7 @@ public class DocumentImpl implements Document {
         checkPosition(position);
 
         final Paragraph paragraph = new ParagraphImpl(text);
-        history.addAndExecuteCommand(new InsertParagraph(documentItems, paragraph, position));
+        history.addAndExecuteCommand(new InsertParagraphCommand(documentItems, paragraph, position));
         return paragraph;
     }
 
@@ -76,21 +76,15 @@ public class DocumentImpl implements Document {
     }
 
     @Override
-    public void replaceParagraphText(int position, String newText) {
-        try {
-            checkPosition(position);
-            history.addAndExecuteCommand(new ReplaceParagraphCommand(documentItems, position, newText));
-        } catch (Exception exception) {
-        }
+    public void replaceParagraphText(int position, String newText) throws Exception {
+        checkPosition(position);
+        history.addAndExecuteCommand(new ReplaceParagraphCommand(documentItems, position, newText));
     }
 
     @Override
-    public void resizeImage(int position, int width, int height) {
-        try {
-            checkPosition(position);
-            history.addAndExecuteCommand(new ResizeImageCommand(documentItems, position, width, height));
-        } catch (Exception exception) {
-        }
+    public void resizeImage(int position, int width, int height) throws Exception {
+        checkPosition(position);
+        history.addAndExecuteCommand(new ResizeImageCommand(documentItems, position, width, height));
     }
 
     @Override

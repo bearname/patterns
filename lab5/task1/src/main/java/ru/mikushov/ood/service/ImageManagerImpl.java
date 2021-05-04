@@ -39,13 +39,11 @@ public class ImageManagerImpl implements ImageManager {
         Path copied = Paths.get(newFilePath);
         Path originalPath = image.toPath();
 
-        System.out.println(directoryFile.getAbsolutePath());
         if (!directoryFile.exists()) {
             directoryFile.mkdir();
         }
 
         Path copy = Files.copy(originalPath, copied, StandardCopyOption.REPLACE_EXISTING);
-        System.out.println("Path"  + copy.toString());
         return copy.toString();
     }
 

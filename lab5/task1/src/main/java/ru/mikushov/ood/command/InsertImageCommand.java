@@ -15,7 +15,7 @@ public class InsertImageCommand extends BaseCommand {
 
     public InsertImageCommand(List<DocumentItem> documentItems, ImageManager imageManager, Image image, int position) throws Exception {
         if (position < -1 || position > documentItems.size()) {
-            throw new Exception("Invalid position. Valid range [-1, " + (documentItems.size() - 1) + "]");
+            throw new Exception("Invalid position. Valid range [-1, " + (documentItems.size()) + "]");
         }
 
         this.position = position;

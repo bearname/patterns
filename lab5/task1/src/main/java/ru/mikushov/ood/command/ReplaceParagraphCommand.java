@@ -10,9 +10,14 @@ public class ReplaceParagraphCommand extends BaseCommand {
     private final String newValue;
     private final int position;
 
-    public ReplaceParagraphCommand(List<DocumentItem> documentItems, int position, String newValue) {
+    public ReplaceParagraphCommand(List<DocumentItem> documentItems, int position, String newValue) throws Exception {
         this.documentItems = documentItems;
-        this.oldValue = documentItems.get(position).getParagraph().getText();
+        DocumentItem documentItem = documentItems.get(position);
+        if (!documentItem.isParagraph()) {
+            throw new Exception("Cannot perform ReplaceParagraphCommand on image item");
+        }
+
+        this.oldValue = documentItem.getParagraph().getText();
         this.newValue = newValue;
         this.position = position;
     }
@@ -20,19 +25,15 @@ public class ReplaceParagraphCommand extends BaseCommand {
     @Override
     void doExecute() {
         DocumentItem documentItem = documentItems.get(position);
-        if (documentItem.isParagraph()) {
-            documentItem.getParagraph().setText(newValue);
-            documentItems.set(position, documentItem);
-        }
+        documentItem.getParagraph().setText(newValue);
+        documentItems.set(position, documentItem);
     }
 
     @Override
     void doUnExecute() {
         DocumentItem documentItem = documentItems.get(position);
-        if (documentItem.isParagraph()) {
-            documentItem.getParagraph().setText(oldValue);
-            documentItems.set(position, documentItem);
-        }
+        documentItem.getParagraph().setText(oldValue);
+        documentItems.set(position, documentItem);
     }
 
     @Override

@@ -10,3 +10,17 @@ undo
 list
 insertParagraph end hello world
 list
+
+begin_macro
+autosave
+auto save
+save D:\Users\mikha\Desktop\github2\ood\labs\lab5\task1\index.html
+end_macro
+
+begin_macro
+insert
+insert image and paragraph and auto save changes
+insertImage end 800 600 D:\Users\mikha\Desktop\github2\ood\labs\lab5\task1\github.png
+insertParagraph end hello world
+autosave
+end_macro
