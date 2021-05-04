@@ -163,29 +163,6 @@ class EditorTest {
         assertEqual(expected, output.toString());
     }
 
-
-    @Test
-    public void macroCommand() {
-        String s = "begin_macro\n" +
-                "autosave\n" +
-                "autosave command\n" +
-                "save index.html\n" +
-                "end_macro\n" +
-                "help\n" +
-                "exit\n";
-
-        System.setIn(new ByteArrayInputStream(s.getBytes()));
-
-        System.out.println("Enter macro description");
-        System.out.print("> ");
-//        editor.start();
-        String expected = "> > Title: Html Document\n" +
-                "0. Paragraph: hello world\n" +
-                "> > Title: Html Document\n" +
-                "> ";
-//        assertEqual(expected, output.toString());
-    }
-
     @Test
     public void insertImageInvalidArgumentCount() {
         String s = "insertImage end 400 300 D:\\Users\\mikha\\Desktop\\github2\\ood\\labs\\lab5\\task1\\github.png 400\n" +
