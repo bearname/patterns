@@ -391,7 +391,7 @@ public class DocumentImplTest {
         }
     }
 
-  @Test
+    @Test
     public void cannotDeleteItemWithPositionMoreThanMaxValue() {
         try {
             Paragraph paragraph = document.insertParagraph("github.png", -1);

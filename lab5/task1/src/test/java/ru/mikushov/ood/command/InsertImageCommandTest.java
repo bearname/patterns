@@ -55,6 +55,7 @@ public class InsertImageCommandTest {
             exception.printStackTrace();
         }
     }
+
     @Test
     public void canInsertImageItem() {
         try {
@@ -98,7 +99,7 @@ public class InsertImageCommandTest {
     }
 
 
-
     @Test
-    public void undo() {}
+    public void undo() {
+    }
 }

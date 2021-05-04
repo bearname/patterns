@@ -8,7 +8,7 @@ import java.util.List;
 public class InsertParagraphCommand extends BaseCommand {
     private final List<DocumentItem> documentItems;
     private final Paragraph paragraph;
-    private int position = 0;
+    private int position;
 
     public InsertParagraphCommand(List<DocumentItem> documentItems, Paragraph paragraph, int position) throws Exception {
         if (position < -1 || position > documentItems.size()) {

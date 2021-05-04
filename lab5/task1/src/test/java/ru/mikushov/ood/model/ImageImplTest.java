@@ -59,7 +59,7 @@ class ImageImplTest {
     @Test
     public void heightLessThanMaxValue() {
         try {
-            new ImageImpl("image.jpg",  300, 10001);
+            new ImageImpl("image.jpg", 300, 10001);
             fail();
         } catch (Exception e) {
             assertEquals("Height must be in range [1, 10000]", e.getMessage());

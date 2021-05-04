@@ -40,7 +40,7 @@ public class ImageManagerImpl implements ImageManager {
         Path originalPath = image.toPath();
 
         if (!directoryFile.exists()) {
-            directoryFile.mkdir();
+            boolean mkdir = directoryFile.mkdir();
         }
 
         Path copy = Files.copy(originalPath, copied, StandardCopyOption.REPLACE_EXISTING);

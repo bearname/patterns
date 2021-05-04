@@ -34,7 +34,7 @@ public class Editor {
         Scanner scanner = new Scanner(System.in);
         scanner.useDelimiter("\n");
 
-        String shortcutOfMacroCommand = "";
+        String shortcutOfMacroCommand;
         while (true) {
             info("Enter macro shortcut");
             System.out.print("> ");

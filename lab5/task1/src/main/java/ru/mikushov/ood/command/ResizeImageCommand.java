@@ -14,7 +14,7 @@ public class ResizeImageCommand extends BaseCommand {
     private final int oldHeight;
     private final int oldWidth;
 
-    public ResizeImageCommand(List<DocumentItem> documentItems, int position, int newWidth, int newHeignt) throws Exception {
+    public ResizeImageCommand(List<DocumentItem> documentItems, int position, int newWidth, int newHeight) throws Exception {
         this.documentItems = documentItems;
         this.position = position;
         DocumentItem documentItem = documentItems.get(position);
@@ -26,7 +26,7 @@ public class ResizeImageCommand extends BaseCommand {
         this.oldWidth = image.getWidth();
         this.oldHeight = image.getHeight();
         this.newWidth = newWidth;
-        this.newHeight = newHeignt;
+        this.newHeight = newHeight;
     }
 
     @Override
