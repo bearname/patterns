@@ -16,6 +16,7 @@ public class DocumentImpl implements Document {
     private final History history = new History();
     private final ImageManager imageManager = new ImageManagerImpl();
     private final HashMap<Integer, Paragraph> markedToDeleteParagraph = new HashMap<>();
+    private final HtmlWriter htmlWriter = new HtmlWriter();
 
     public DocumentImpl() {
         this("Html Document");
@@ -109,40 +110,6 @@ public class DocumentImpl implements Document {
 
     @Override
     public void save(String path) {
-        File file = new File(path);
-        try (FileWriter fileWriter = new FileWriter(file)) {
-            fileWriter.write("<!DOCTYPE html>\n" +
-                    "<html lang=\"en\">\n" +
-                    "<head>\n" +
-                    "    <title>" + title.getValue() + "</title\n></head>\n" +
-                    "<body>\n");
-
-            for (DocumentItem documentItem : documentItems) {
-                writeItem(fileWriter, documentItem);
-            }
-
-            fileWriter.write("</body>\n" +
-                    "</html>");
-        } catch (Exception exception) {
-            exception.printStackTrace();
-        }
-    }
-
-    private void writeItem(FileWriter fileWriter, DocumentItem documentItem) throws IOException {
-        final Paragraph paragraph = documentItem.getParagraph();
-        if (paragraph != null) {
-            writeParagraph(fileWriter, paragraph);
-        } else if (documentItem.getImage() != null) {
-            final Image image = documentItem.getImage();
-            writeImage(fileWriter, image);
-        }
-    }
-
-    private void writeParagraph(FileWriter fileWriter, Paragraph paragraph) throws IOException {
-        fileWriter.write("    <p>" + paragraph.getText() + "</p>\n");
-    }
-
-    private void writeImage(FileWriter fileWriter, Image image) throws IOException {
-        fileWriter.write("    <img src=\"" + image.getPath() + "\" style=\"width:" + image.getWidth() + "px; height:" + image.getHeight() + "px\" alt=\"someImage\">\n");
+        htmlWriter.save(path, title, documentItems);
     }
 }

@@ -3,3 +3,4 @@ lab*/*/build
 lab*/*/out
 *.gradle
 *.idea
+lab*/.idea

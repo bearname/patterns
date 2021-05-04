@@ -442,7 +442,7 @@ public class DocumentImplTest {
     }
 
     private List<DocumentItem> parseHtml(Document htmlDocument) throws Exception {
-        Element body = htmlDocument.select("body").first();
+        Element body = htmlDocument.select(".container").first();
         List<DocumentItem> checkDocumentsItems = new ArrayList<>();
         for (Element element : body.children()) {
             DocumentItem documentItem = parseTag(element);
