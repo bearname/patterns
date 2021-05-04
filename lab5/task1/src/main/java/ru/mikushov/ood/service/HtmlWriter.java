@@ -11,10 +11,9 @@ import java.io.IOException;
 import java.util.List;
 
 public class HtmlWriter {
-    private File file;
 
     public void save(final String path, final Text title, final List<DocumentItem> documentItems) {
-        file = new File(path);
+        File file = new File(path);
         try (FileWriter fileWriter = new FileWriter(file)) {
             fileWriter.write("<!DOCTYPE html>\n" +
                     "<html lang=\"en\">\n" +
